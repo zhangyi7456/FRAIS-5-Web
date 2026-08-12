@@ -1,9 +1,9 @@
 {
   "meta": {
     "schemaVersion": "3.0",
-    "webVersion": "3.0.0",
+    "webVersion": "3.1.0",
     "strategyVersion": "1.0.0",
-    "generatedAt": "2026-08-12T10:53:47+00:00",
+    "generatedAt": "2026-08-12T12:04:46+00:00",
     "configFingerprint": "e452270292411993",
     "priceConvention": "前复权日收盘价（QFQ adjusted close）",
     "timingRule": "收盘T计算，最早T+1使用；正式建议仅采用最近已完成月末信号",
@@ -21,7 +21,7 @@
   "provenance": {
     "512890": {
       "source": "TENCENT_QFQ",
-      "fetchedAt": "2026-08-12T10:52:41+00:00",
+      "fetchedAt": "2026-08-12T12:03:55+00:00",
       "firstDate": "2019-01-18",
       "lastDate": "2026-08-12",
       "observations": "1833",
@@ -32,7 +32,7 @@
     },
     "513100": {
       "source": "TENCENT_QFQ",
-      "fetchedAt": "2026-08-12T10:53:00+00:00",
+      "fetchedAt": "2026-08-12T12:04:01+00:00",
       "firstDate": "2013-05-15",
       "lastDate": "2026-08-12",
       "observations": "3220",
@@ -43,7 +43,7 @@
     },
     "588000": {
       "source": "TENCENT_QFQ",
-      "fetchedAt": "2026-08-12T10:53:11+00:00",
+      "fetchedAt": "2026-08-12T12:04:11+00:00",
       "firstDate": "2020-11-16",
       "lastDate": "2026-08-12",
       "observations": "1393",
@@ -52,7 +52,7 @@
     },
     "518880": {
       "source": "TENCENT_QFQ",
-      "fetchedAt": "2026-08-12T10:53:28+00:00",
+      "fetchedAt": "2026-08-12T12:04:27+00:00",
       "firstDate": "2013-07-29",
       "lastDate": "2026-08-12",
       "observations": "3171",
@@ -61,7 +61,7 @@
     },
     "511010": {
       "source": "TENCENT_QFQ",
-      "fetchedAt": "2026-08-12T10:53:47+00:00",
+      "fetchedAt": "2026-08-12T12:04:46+00:00",
       "firstDate": "2013-03-25",
       "lastDate": "2026-08-12",
       "observations": "3253",
