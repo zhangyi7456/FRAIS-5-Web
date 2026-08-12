@@ -1,9 +1,9 @@
 {
   "meta": {
     "schemaVersion": "3.0",
-    "webVersion": "3.1.0",
+    "webVersion": "3.2.0",
     "strategyVersion": "1.0.0",
-    "generatedAt": "2026-08-12T12:04:46+00:00",
+    "generatedAt": "2026-08-12T12:42:32+00:00",
     "configFingerprint": "e452270292411993",
     "priceConvention": "前复权日收盘价（QFQ adjusted close）",
     "timingRule": "收盘T计算，最早T+1使用；正式建议仅采用最近已完成月末信号",
@@ -20,53 +20,60 @@
   },
   "provenance": {
     "512890": {
-      "source": "TENCENT_QFQ",
-      "fetchedAt": "2026-08-12T12:03:55+00:00",
-      "firstDate": "2019-01-18",
-      "lastDate": "2026-08-12",
-      "observations": "1833",
-      "calendarFillCount": 1,
-      "calendarFilledDates": [
-        "2021-10-22"
-      ]
+      "source": "INPUT_CSV"
     },
     "513100": {
-      "source": "TENCENT_QFQ",
-      "fetchedAt": "2026-08-12T12:04:01+00:00",
-      "firstDate": "2013-05-15",
-      "lastDate": "2026-08-12",
-      "observations": "3220",
-      "calendarFillCount": 1,
-      "calendarFilledDates": [
-        "2022-01-13"
-      ]
+      "source": "INPUT_CSV"
     },
     "588000": {
-      "source": "TENCENT_QFQ",
-      "fetchedAt": "2026-08-12T12:04:11+00:00",
-      "firstDate": "2020-11-16",
-      "lastDate": "2026-08-12",
-      "observations": "1393",
-      "calendarFillCount": 0,
-      "calendarFilledDates": []
+      "source": "INPUT_CSV"
     },
     "518880": {
-      "source": "TENCENT_QFQ",
-      "fetchedAt": "2026-08-12T12:04:27+00:00",
-      "firstDate": "2013-07-29",
-      "lastDate": "2026-08-12",
-      "observations": "3171",
-      "calendarFillCount": 0,
-      "calendarFilledDates": []
+      "source": "INPUT_CSV"
     },
     "511010": {
-      "source": "TENCENT_QFQ",
-      "fetchedAt": "2026-08-12T12:04:46+00:00",
-      "firstDate": "2013-03-25",
-      "lastDate": "2026-08-12",
-      "observations": "3253",
-      "calendarFillCount": 0,
-      "calendarFilledDates": []
+      "source": "INPUT_CSV"
+    }
+  },
+  "allocationModel": {
+    "baseEquityTotal": 0.85,
+    "coreRatio": 0.7,
+    "equityMin": 0.595,
+    "equityMax": 0.85,
+    "riskWeights": {
+      "trend": 0.45,
+      "volatility": 0.35,
+      "drawdown": 0.2
+    },
+    "attractivenessWeights": {
+      "trend": 0.3,
+      "relativeStrength": 0.15,
+      "volPenalty": 0.15
+    },
+    "equityBounds": {
+      "512890": {
+        "floor": 0.4,
+        "cap": 0.55
+      },
+      "513100": {
+        "floor": 0.25,
+        "cap": 0.45
+      },
+      "588000": {
+        "floor": 0.1,
+        "cap": 0.25
+      }
+    },
+    "defense": {
+      "goldBaseShare": 0.33,
+      "goldTrendCoefficient": 0.12,
+      "bondTrendCoefficient": -0.06,
+      "goldShareMin": 0.2,
+      "goldShareMax": 0.45,
+      "goldAbsoluteMin": 0.04,
+      "goldAbsoluteMax": 0.15,
+      "bondAbsoluteMin": 0.08,
+      "bondAbsoluteMax": 0.35
     }
   },
   "risk": {
@@ -77,6 +84,10 @@
     "volScore": 0.7867658345570558,
     "drawdown": -0.011888696520846453,
     "ddScore": 0.9405565173957677,
+    "confirmedScore": 0.7965285325128022,
+    "confirmedTrendBreadth": 0.7647058823529412,
+    "confirmedVolScore": 0.7968786718339435,
+    "confirmedDDScore": 0.8675167515604917,
     "confirmedEquityTarget": 0.7981147757907645,
     "provisionalEquityTarget": 0.7901372331214014
   },
@@ -86,6 +97,7 @@
       "name": "红利低波ETF",
       "assetClass": "EQUITY",
       "role": "权益核心与低波动底仓",
+      "strategicWeight": 0.4,
       "return63": -0.013605442176870763,
       "return126": 0.005199306759098743,
       "return252": -0.024390243902439157,
@@ -95,6 +107,20 @@
       "forecastVol": 0.16461306374879253,
       "relativeStrength": -1.0,
       "volPenalty": 0.0,
+      "confirmedSignals": {
+        "trendScore": 0.0,
+        "relativeStrength": 0.1526053407617145,
+        "volPenalty": 0.07219591146165683
+      },
+      "targetFormation": {
+        "group": "EQUITY",
+        "strategicGroupShare": 0.4705882352941177,
+        "attractiveness": 1.0121344465820732,
+        "finalGroupShare": 0.4969564166378553,
+        "floor": 0.4,
+        "cap": 0.55,
+        "boundScope": "EQUITY_INTERNAL"
+      },
       "confirmedTarget": 0.3966282590427036,
       "provisionalTarget": 0.37824894481694643
     },
@@ -103,6 +129,7 @@
       "name": "纳指ETF",
       "assetClass": "EQUITY",
       "role": "海外成长与科技暴露",
+      "strategicWeight": 0.3,
       "return63": 0.05938242280285033,
       "return126": 0.21658483360611025,
       "return252": 0.32501485442661915,
@@ -112,6 +139,20 @@
       "forecastVol": 0.299995524166068,
       "relativeStrength": 1.0,
       "volPenalty": 0.0,
+      "confirmedSignals": {
+        "trendScore": 1.0,
+        "relativeStrength": 1.0,
+        "volPenalty": 0.0
+      },
+      "targetFormation": {
+        "group": "EQUITY",
+        "strategicGroupShare": 0.35294117647058826,
+        "attractiveness": 1.5683121854901687,
+        "finalGroupShare": 0.36267618411869734,
+        "floor": 0.25,
+        "cap": 0.45,
+        "boundScope": "EQUITY_INTERNAL"
+      },
       "confirmedTarget": 0.28945722137254415,
       "provisionalTarget": 0.2933644520652932
     },
@@ -120,6 +161,7 @@
       "name": "科创50ETF",
       "assetClass": "EQUITY",
       "role": "境内科技卫星仓",
+      "strategicWeight": 0.15,
       "return63": 0.008264462809917328,
       "return126": 0.19764397905759168,
       "return252": 0.6266666666666667,
@@ -129,6 +171,20 @@
       "forecastVol": 0.662129668198131,
       "relativeStrength": -0.15541738129403893,
       "volPenalty": 0.13040558939826163,
+      "confirmedSignals": {
+        "trendScore": 1.0,
+        "relativeStrength": -1.0,
+        "volPenalty": 0.22232258216641765
+      },
+      "targetFormation": {
+        "group": "EQUITY",
+        "strategicGroupShare": 0.17647058823529413,
+        "attractiveness": 1.1237278689408499,
+        "finalGroupShare": 0.1403673992434475,
+        "floor": 0.1,
+        "cap": 0.25,
+        "boundScope": "EQUITY_INTERNAL"
+      },
       "confirmedTarget": 0.11202929537551681,
       "provisionalTarget": 0.11852383623916182
     },
@@ -137,6 +193,7 @@
       "name": "黄金ETF",
       "assetClass": "GOLD",
       "role": "危机与货币风险缓冲",
+      "strategicWeight": 0.05,
       "return63": -0.07095456865747829,
       "return126": -0.0815502624142107,
       "return252": 0.235909276110281,
@@ -146,6 +203,20 @@
       "forecastVol": 0.21027038388645214,
       "relativeStrength": null,
       "volPenalty": null,
+      "confirmedSignals": {
+        "trendScore": 0.0,
+        "relativeStrength": null,
+        "volPenalty": null
+      },
+      "targetFormation": {
+        "group": "DEFENSE",
+        "strategicGroupShare": 0.3333333333333333,
+        "attractiveness": null,
+        "finalGroupShare": 0.27,
+        "floor": 0.04,
+        "cap": 0.15,
+        "boundScope": "PORTFOLIO"
+      },
       "confirmedTarget": 0.05450901053649359,
       "provisionalTarget": 0.05666294705722163
     },
@@ -154,6 +225,7 @@
       "name": "国债ETF",
       "assetClass": "BOND",
       "role": "低波动防御与资金承接",
+      "strategicWeight": 0.1,
       "return63": 0.006298280277038826,
       "return126": 0.01462825252074862,
       "return252": 0.025484466541642936,
@@ -163,6 +235,20 @@
       "forecastVol": 0.00567537086291975,
       "relativeStrength": null,
       "volPenalty": null,
+      "confirmedSignals": {
+        "trendScore": 1.0,
+        "relativeStrength": null,
+        "volPenalty": null
+      },
+      "targetFormation": {
+        "group": "DEFENSE",
+        "strategicGroupShare": 0.6666666666666666,
+        "attractiveness": null,
+        "finalGroupShare": 0.73,
+        "floor": 0.08,
+        "cap": 0.35,
+        "boundScope": "PORTFOLIO"
+      },
       "confirmedTarget": 0.1473762136727419,
       "provisionalTarget": 0.15319981982137698
     }
