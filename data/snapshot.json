@@ -3,7 +3,7 @@
     "schemaVersion": "3.0",
     "webVersion": "3.7.0",
     "strategyVersion": "1.1.0",
-    "generatedAt": "2026-08-18T10:42:46+00:00",
+    "generatedAt": "2026-08-18T11:38:54+00:00",
     "configFingerprint": "a46ba9e47f5bee89",
     "priceConvention": "前复权日收盘价（QFQ adjusted close）",
     "timingRule": "收盘T计算，最早T+1使用；正式建议仅采用最近已完成月末信号",
@@ -29,9 +29,9 @@
   },
   "provenance": {
     "512890": {
-      "source": "EASTMONEY_QFQ",
-      "fetchedAt": "2026-08-18T10:42:45+00:00",
-      "durationMs": 1862,
+      "source": "TENCENT_QFQ",
+      "fetchedAt": "2026-08-18T11:38:51+00:00",
+      "durationMs": 4635,
       "firstDate": "2019-01-18",
       "lastDate": "2026-08-18",
       "observations": "1837",
@@ -41,9 +41,9 @@
       ]
     },
     "513100": {
-      "source": "EASTMONEY_QFQ",
-      "fetchedAt": "2026-08-18T10:42:45+00:00",
-      "durationMs": 2175,
+      "source": "TENCENT_QFQ",
+      "fetchedAt": "2026-08-18T11:38:54+00:00",
+      "durationMs": 7753,
       "firstDate": "2013-05-15",
       "lastDate": "2026-08-18",
       "observations": "3224",
@@ -53,9 +53,9 @@
       ]
     },
     "588000": {
-      "source": "EASTMONEY_QFQ",
-      "fetchedAt": "2026-08-18T10:42:45+00:00",
-      "durationMs": 1888,
+      "source": "TENCENT_QFQ",
+      "fetchedAt": "2026-08-18T11:38:51+00:00",
+      "durationMs": 4989,
       "firstDate": "2020-11-16",
       "lastDate": "2026-08-18",
       "observations": "1397",
@@ -63,9 +63,9 @@
       "calendarFilledDates": []
     },
     "518880": {
-      "source": "EASTMONEY_QFQ",
-      "fetchedAt": "2026-08-18T10:42:45+00:00",
-      "durationMs": 2176,
+      "source": "TENCENT_QFQ",
+      "fetchedAt": "2026-08-18T11:38:53+00:00",
+      "durationMs": 7359,
       "firstDate": "2013-07-29",
       "lastDate": "2026-08-18",
       "observations": "3175",
@@ -73,9 +73,9 @@
       "calendarFilledDates": []
     },
     "511010": {
-      "source": "EASTMONEY_QFQ",
-      "fetchedAt": "2026-08-18T10:42:46+00:00",
-      "durationMs": 2398,
+      "source": "TENCENT_QFQ",
+      "fetchedAt": "2026-08-18T11:38:54+00:00",
+      "durationMs": 8540,
       "firstDate": "2013-03-25",
       "lastDate": "2026-08-18",
       "observations": "3257",
@@ -145,19 +145,19 @@
     "cashFlowFirst": true
   },
   "risk": {
-    "score": 0.7282842245637944,
+    "score": 0.728216747763849,
     "regime": "YELLOW",
     "trendBreadth": 0.49411764705882355,
-    "forecastVol": 0.1348570041980066,
-    "volScore": 0.8898314233927923,
-    "drawdown": -0.005509714800153498,
-    "ddScore": 0.9724514259992325,
+    "forecastVol": 0.13486623241213924,
+    "volScore": 0.8897705367292432,
+    "drawdown": -0.005555881267856666,
+    "ddScore": 0.9722205936607167,
     "confirmedScore": 0.796528532512802,
     "confirmedTrendBreadth": 0.7647058823529412,
     "confirmedVolScore": 0.7968786718339431,
     "confirmedDDScore": 0.8675167515604917,
     "confirmedEquityTarget": 0.7981147757907645,
-    "provisionalEquityTarget": 0.7807124772637675
+    "provisionalEquityTarget": 0.7806952706797814
   },
   "assets": [
     {
@@ -165,16 +165,16 @@
       "name": "红利低波ETF",
       "assetClass": "EQUITY",
       "role": "权益核心与低波动底仓",
-      "latestPrice": 1.161,
+      "latestPrice": 1.16,
       "lotSize": 100,
       "strategicWeight": 0.4,
-      "return63": -0.002577319587628746,
-      "return126": -0.014431239388794537,
-      "return252": -0.021903959561920816,
+      "return63": -0.0034364261168384758,
+      "return126": -0.015280135823429575,
+      "return252": -0.022746419545071728,
       "trendScore": -1.0,
-      "vol20": 0.1334314492442465,
-      "vol60": 0.16434894269388792,
-      "forecastVol": 0.15198194531403136,
+      "vol20": 0.13310105878656767,
+      "vol60": 0.1642653467310061,
+      "forecastVol": 0.15179963155323073,
       "relativeStrength": -1.0,
       "volPenalty": 0.0,
       "confirmedSignals": {
@@ -192,23 +192,23 @@
         "boundScope": "EQUITY_INTERNAL"
       },
       "confirmedTarget": 0.31924591031630584,
-      "provisionalTarget": 0.312284990905507
+      "provisionalTarget": 0.3122781082719126
     },
     {
       "code": "513100",
       "name": "纳指ETF",
       "assetClass": "EQUITY",
       "role": "海外成长与科技暴露",
-      "latestPrice": 2.239,
+      "latestPrice": 2.24,
       "lotSize": 100,
       "strategicWeight": 0.3,
-      "return63": 0.08794946550048599,
-      "return126": 0.23496966354109206,
-      "return252": 0.358616504854369,
+      "return63": 0.08843537414965996,
+      "return126": 0.23552123552123572,
+      "return252": 0.35922330097087407,
       "trendScore": 1.0,
-      "vol20": 0.2686269554906174,
-      "vol60": 0.29636982430971337,
-      "forecastVol": 0.28527267678207496,
+      "vol20": 0.2682398496104495,
+      "vol60": 0.29627217402542355,
+      "forecastVol": 0.2850592442594339,
       "relativeStrength": 1.0,
       "volPenalty": 0.0,
       "confirmedSignals": {
@@ -226,24 +226,24 @@
         "boundScope": "EQUITY_INTERNAL"
       },
       "confirmedTarget": 0.35256046199097774,
-      "provisionalTarget": 0.3367949270834967
+      "provisionalTarget": 0.33668734639553705
     },
     {
       "code": "588000",
       "name": "科创50ETF",
       "assetClass": "EQUITY",
       "role": "境内科技卫星仓",
-      "latestPrice": 1.888,
+      "latestPrice": 1.89,
       "lotSize": 100,
       "strategicWeight": 0.15,
-      "return63": -0.022268254790264175,
-      "return126": 0.25950633755837216,
-      "return252": 0.7101449275362317,
+      "return63": -0.021232522009321686,
+      "return126": 0.26084056037358216,
+      "return252": 0.7119565217391302,
       "trendScore": 0.6,
-      "vol20": 0.530314608704779,
-      "vol60": 0.6148831957162517,
-      "forecastVol": 0.5810557609116627,
-      "relativeStrength": 0.1579157306764396,
+      "vol20": 0.5304004831021704,
+      "vol60": 0.6148885605860074,
+      "forecastVol": 0.5810933295924725,
+      "relativeStrength": 0.16496941919869923,
       "volPenalty": 0.0,
       "confirmedSignals": {
         "trendScore": 1.0,
@@ -260,23 +260,23 @@
         "boundScope": "EQUITY_INTERNAL"
       },
       "confirmedTarget": 0.12630840348348696,
-      "provisionalTarget": 0.13163255927476095
+      "provisionalTarget": 0.1317298160123269
     },
     {
       "code": "518880",
       "name": "黄金ETF",
       "assetClass": "GOLD",
       "role": "危机与货币风险缓冲",
-      "latestPrice": 9.078,
+      "latestPrice": 9.08,
       "lotSize": 100,
       "strategicWeight": 0.05,
-      "return63": -0.030852994555354063,
-      "return126": -0.12349135850149662,
-      "return252": 0.2191780821917808,
+      "return63": -0.03063947902209896,
+      "return126": -0.12329825238968806,
+      "return252": 0.21944668278270218,
       "trendScore": 0.0,
-      "vol20": 0.18352995010454795,
-      "vol60": 0.23044539682506435,
-      "forecastVol": 0.2116792181368578,
+      "vol20": 0.18349265270925874,
+      "vol60": 0.2304531048067043,
+      "forecastVol": 0.21166892396772607,
       "relativeStrength": null,
       "volPenalty": null,
       "confirmedSignals": {
@@ -294,23 +294,23 @@
         "boundScope": "PORTFOLIO"
       },
       "confirmedTarget": 0.05450901053649359,
-      "provisionalTarget": 0.05920763113878279
+      "provisionalTarget": 0.05921227691645903
     },
     {
       "code": "511010",
       "name": "国债ETF",
       "assetClass": "BOND",
       "role": "低波动防御与资金承接",
-      "latestPrice": 141.283,
+      "latestPrice": 141.28,
       "lotSize": 100,
       "strategicWeight": 0.1,
-      "return63": 0.0058306754755665935,
-      "return126": 0.014964080459770157,
-      "return252": 0.025253441507078866,
+      "return63": 0.005809317689941862,
+      "return126": 0.014942528735632177,
+      "return252": 0.02523167129888315,
       "trendScore": 1.0,
-      "vol20": 0.00448383168593508,
-      "vol60": 0.006453969227459883,
-      "forecastVol": 0.005665914210849962,
+      "vol20": 0.004465285909227048,
+      "vol60": 0.006449077202973487,
+      "forecastVol": 0.005655560685474912,
       "relativeStrength": null,
       "volPenalty": null,
       "confirmedSignals": {
@@ -328,7 +328,7 @@
         "boundScope": "PORTFOLIO"
       },
       "confirmedTarget": 0.1473762136727419,
-      "provisionalTarget": 0.16007989159744973
+      "provisionalTarget": 0.16009245240375958
     }
   ],
   "history": [
@@ -1240,9 +1240,9 @@
     },
     {
       "date": "2026-08-18",
-      "riskScore": 0.7282842245637944,
-      "targetEquity": 0.7807124772637675,
-      "drawdown": -0.005509714800153498
+      "riskScore": 0.728216747763849,
+      "targetEquity": 0.7806952706797814,
+      "drawdown": -0.005555881267856666
     }
   ],
   "diagnostics": {
@@ -3283,12 +3283,12 @@
         "key": "A_FIXED_ANNUAL",
         "label": "A 固定配置·年度再平衡",
         "metrics": {
-          "cagr": 0.12127988004445434,
-          "annualVolatility": 0.1253616336388043,
+          "cagr": 0.12128549627712903,
+          "annualVolatility": 0.12536147515865784,
           "maxDrawdown": -0.12047064013171693,
-          "sharpe": 1.0110901260942582,
-          "sortino": 1.423719496324313,
-          "calmar": 1.0067173206007092,
+          "sharpe": 1.01113274879317,
+          "sortino": 1.4237808109575516,
+          "calmar": 1.0067639396995083,
           "worstMonth": -0.06216841933224326,
           "worstYear": -0.10521030770161532,
           "rolling3YCagrMin": 0.08108781782399332,
@@ -4220,12 +4220,12 @@
         "key": "B_FIXED_5_25",
         "label": "B 固定配置·5/25阈值",
         "metrics": {
-          "cagr": 0.12835063207423492,
-          "annualVolatility": 0.12475330732146991,
+          "cagr": 0.12835101979252928,
+          "annualVolatility": 0.12475329705902798,
           "maxDrawdown": -0.12306335137990077,
-          "sharpe": 1.0677139035405618,
-          "sortino": 1.519573420057151,
-          "calmar": 1.0429638932716219,
+          "sharpe": 1.0677168422904262,
+          "sortino": 1.5195776932858995,
+          "calmar": 1.0429670438301757,
           "worstMonth": -0.06073707771318726,
           "worstYear": -0.1087613829599503,
           "rolling3YCagrMin": 0.07900374726274406,
@@ -5157,12 +5157,12 @@
         "key": "C_MA200",
         "label": "C 200日均线过滤",
         "metrics": {
-          "cagr": 0.09113854711312919,
-          "annualVolatility": 0.09637976825466794,
+          "cagr": 0.0911389220447898,
+          "annualVolatility": 0.09637975552765672,
           "maxDrawdown": -0.08438868407711397,
-          "sharpe": 0.9879967057222346,
-          "sortino": 1.3920435472233545,
-          "calmar": 1.0799854045578814,
+          "sharpe": 0.988000526396255,
+          "sortino": 1.3920490711761173,
+          "calmar": 1.0799898474718184,
           "worstMonth": -0.05260544139744294,
           "worstYear": -0.04959477680458624,
           "rolling3YCagrMin": 0.07687759247208459,
@@ -6094,12 +6094,12 @@
         "key": "D_FRAIS_V1",
         "label": "D FRAIS V1.1",
         "metrics": {
-          "cagr": 0.11707076780581005,
-          "annualVolatility": 0.1200698843561164,
+          "cagr": 0.1170811912612102,
+          "annualVolatility": 0.1200695700593924,
           "maxDrawdown": -0.11590393678065114,
-          "sharpe": 1.0177498126423619,
-          "sortino": 1.4142461698746662,
-          "calmar": 1.010067225131163,
+          "sharpe": 1.0178328861747987,
+          "sortino": 1.4143641607067017,
+          "calmar": 1.0101571569806729,
           "worstMonth": -0.06336480035296321,
           "worstYear": -0.10087867582339283,
           "rolling3YCagrMin": 0.07385996136089168,
@@ -7046,21 +7046,21 @@
         {
           "costBp": 5,
           "cases": 27,
-          "medianCagr": 0.13609299556421428,
+          "medianCagr": 0.13609875459758114,
           "medianMaxDrawdown": -0.09967377971849267,
           "medianTurnover": 0.10269938920760337
         },
         {
           "costBp": 10,
           "cases": 27,
-          "medianCagr": 0.13600157178819483,
+          "medianCagr": 0.13601387159824352,
           "medianMaxDrawdown": -0.09972690342160961,
           "medianTurnover": 0.10269938920760337
         },
         {
           "costBp": 20,
           "cases": 27,
-          "medianCagr": 0.13583181986235493,
+          "medianCagr": 0.13584411783445183,
           "medianMaxDrawdown": -0.09983314463696413,
           "medianTurnover": 0.10269938920760337
         }
