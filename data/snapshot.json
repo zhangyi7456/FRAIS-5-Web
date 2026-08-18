@@ -1,9 +1,9 @@
 {
   "meta": {
     "schemaVersion": "3.0",
-    "webVersion": "3.6.0",
+    "webVersion": "3.7.0",
     "strategyVersion": "1.1.0",
-    "generatedAt": "2026-08-18T09:49:55+00:00",
+    "generatedAt": "2026-08-18T10:42:46+00:00",
     "configFingerprint": "a46ba9e47f5bee89",
     "priceConvention": "前复权日收盘价（QFQ adjusted close）",
     "timingRule": "收盘T计算，最早T+1使用；正式建议仅采用最近已完成月末信号",
@@ -30,8 +30,8 @@
   "provenance": {
     "512890": {
       "source": "EASTMONEY_QFQ",
-      "fetchedAt": "2026-08-18T09:49:54+00:00",
-      "durationMs": 2051,
+      "fetchedAt": "2026-08-18T10:42:45+00:00",
+      "durationMs": 1862,
       "firstDate": "2019-01-18",
       "lastDate": "2026-08-18",
       "observations": "1837",
@@ -42,8 +42,8 @@
     },
     "513100": {
       "source": "EASTMONEY_QFQ",
-      "fetchedAt": "2026-08-18T09:49:54+00:00",
-      "durationMs": 2319,
+      "fetchedAt": "2026-08-18T10:42:45+00:00",
+      "durationMs": 2175,
       "firstDate": "2013-05-15",
       "lastDate": "2026-08-18",
       "observations": "3224",
@@ -54,8 +54,8 @@
     },
     "588000": {
       "source": "EASTMONEY_QFQ",
-      "fetchedAt": "2026-08-18T09:49:54+00:00",
-      "durationMs": 1812,
+      "fetchedAt": "2026-08-18T10:42:45+00:00",
+      "durationMs": 1888,
       "firstDate": "2020-11-16",
       "lastDate": "2026-08-18",
       "observations": "1397",
@@ -64,8 +64,8 @@
     },
     "518880": {
       "source": "EASTMONEY_QFQ",
-      "fetchedAt": "2026-08-18T09:49:55+00:00",
-      "durationMs": 2354,
+      "fetchedAt": "2026-08-18T10:42:45+00:00",
+      "durationMs": 2176,
       "firstDate": "2013-07-29",
       "lastDate": "2026-08-18",
       "observations": "3175",
@@ -74,8 +74,8 @@
     },
     "511010": {
       "source": "EASTMONEY_QFQ",
-      "fetchedAt": "2026-08-18T09:49:54+00:00",
-      "durationMs": 2284,
+      "fetchedAt": "2026-08-18T10:42:46+00:00",
+      "durationMs": 2398,
       "firstDate": "2013-03-25",
       "lastDate": "2026-08-18",
       "observations": "3257",
